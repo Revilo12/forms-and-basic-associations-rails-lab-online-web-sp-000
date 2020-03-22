@@ -1,5 +1,6 @@
 class Song < ActiveRecord::Base
   # add associations here
+  accepts_nested_attributes_for :notes
   belongs_to :artist
   belongs_to :genre
   has_many :notes
