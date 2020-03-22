@@ -12,7 +12,8 @@
   </datalist>
   <%= f.collection_select :genre_id, Genre.all, :id, :name %>
   <%= f.fields_for :notes, Note.new do |notes_attributes| %>
-    <%= notes_attributes.text_field :content %>
+    <%= notes_attributes.text_field :content_1, name: %>
+    <%= notes_attributes.text_field :content_1, name: %>
   <% end %>
   <%= f.submit %>
 <% end %>
